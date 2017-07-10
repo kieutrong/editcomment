@@ -1,0 +1,59 @@
+<footer class="row">
+  <div class="footer-1 col-md-12">
+    <div class="col-md-4  col-md-offset-4 ">
+      <p class="lead"><%= t ".receive_new" %></p>
+      <p class="enter-your-email"><%= t ".enter_your_email" %></p>
+      <form action="" method="post">
+        <ul class="list-inline">
+          <li><input class="text " type="text" placeholder="<%= t".email" %>"></input></li>
+          <li><input class="btn btn-success btn-agree" type="submit" value="<%= t ".agree" %>"></li>
+        </ul>
+      </form>
+    </div>
+
+    <div class="clearfix"></div>
+    <div class="foot-end container">
+      <div class="lh col-md-4">
+        <p class=""><%= t ".copyright" %><span><%= t ".kieutrong" %></span></p>
+      </div>
+      <div class="lh col-md-4">
+        <div class=" row">
+          <div class="col-md-2">
+            <img src="assets/visa.jpg" alt="" />
+          </div>
+          <div class="col-md-2">
+            <img src="assets/pay.jpg" alt="" />
+          </div>
+          <div class="col-md-2">
+            <img src="assets/visa.jpg" alt="" />
+          </div>
+          <div class="col-md-2">
+            <img src="assets/pay.jpg" alt="" />
+          </div>
+          <div class="col-md-2">
+            <img src="assets/visa.jpg" alt="" />
+          </div>
+          <div class="col-md-2">
+            <img src="assets/pay.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="lh col-md-2 col-md-offset-2">
+        <div class=" row">
+          <div class="col-md-3">
+            <%= link_to image_tag("face.png", alt: t(".facebook"),
+              title: t(".facebook"), class: "via-img"), "#" %>
+          </div>
+          <div class="col-md-3 ">
+            <%= link_to image_tag("youtube.png", alt: t(".youtube"),
+              title: t(".youtube"), class: "via-img"), "#" %>
+          </div>
+          <div class="col-md-3 ">
+            <%= link_to image_tag("google.png", alt: t(".google"),
+              title: t(".google"), class: "via-img"), "#" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

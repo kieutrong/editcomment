@@ -1,0 +1,153 @@
+@import 'bootstrap';
+@import 'bootstrap-sprockets';
+
+$color-c40f0f: #c40f0f;
+$color-c40f0f: #c40f0f;
+$color-c40f0f: #c40f0f;
+$color-ccc: #ccc;
+$color-f1f1f1: #f1f1f1;
+$color-fff: #fff;
+$gray-111: #111;
+$gray-555: #555;
+$gray-999: #999;
+
+body {
+  background: url('../assets/img.jpg') center no-repeat;
+}
+
+//CSS FOR NAVBAR
+.header nav {
+  background: $gray-111;
+  border-bottom: 1px solid $color-c40f0f;
+  height: 70px;
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  .introduce {
+    color: $color-ccc;
+
+    &:hover {
+      color: $gray-999;
+    }
+  }
+
+  .project2 {
+    color: $color-fff;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 40px;
+  }
+}
+
+.jumbotron {
+  background: url('../assets/img.jpg') center no-repeat;
+  margin-bottom: -10px;
+  padding: 150px 0;
+  text-align: center;
+
+  h1,
+  p {
+    color: $color-fff;
+  }
+
+  .btn-feature {
+    background: $color-ccc;
+    border: 1px solid $color-fff;
+    color: $color-fff;
+
+    &:hover {
+      color: $color-f1f1f1;
+    }
+  }
+}
+
+footer .footer-1 {
+  background: $gray-111;
+  border-top: 1px solid $color-c40f0f;
+
+  .lead {
+    color: $color-ccc;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .enter-your-email {
+    color: $gray-555;
+    font-size: 10px;
+    margin-top: -15px;
+  }
+
+  .text {
+    background: $color-ccc;
+    border-radius: 5px;
+    color: $gray-111;
+    height: 30px;
+    padding: 5px 0;
+    width: 300px;
+  }
+
+  .btn-agree {
+    height: 30px;
+  }
+
+  .lh {
+    line-height: 50px;
+  }
+
+  .via-img {
+    width: 25px;
+  }
+}
+
+.foot-end {
+  border-top: 1px solid $color-c40f0f;
+  height: 50px;
+
+  p {
+    color: $gray-999;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+
+  span {
+    color: $color-fff;
+    font-size: 14px;
+  }
+}
+
+// CSS for Static Page
+
+.help {
+  color: $color-fff;
+  margin: 150px 0 100px;
+  text-align: center;
+}
+
+.get-help-on-the-ruby {
+  color: $color-fff;
+  margin: 0 0 100px;
+  text-align: center;
+}
+
+.ruby-on-rails,
+.simply-rails {
+  color: $color-fff;
+  margin: 100px 0 50px;
+  text-align: center;
+}
+
+.references {
+  color: $color-fff;
+  float: right;
+  font-size: 13px;
+  margin: 0 0 30px;
+}
+
+.sign-up {
+  color: $color-fff;
+  margin: 100px 0 50px;
+  text-align: center;
+}

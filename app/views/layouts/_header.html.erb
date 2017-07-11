@@ -5,9 +5,15 @@
         <li><%= link_to t(".project"), root_path, class: "project2" %></li>
       </div>
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="nav navbar-nav navbar-right"  >
-          <li><%= link_to t(".introduce"), introduce_path , class: "introduce"%></li>
-          <%= link_to t(".log_in"), "#", class: "btn btn-success navbar-btn navbar-right" %>
+        <ul class="nav navbar-nav navbar-right" >
+          <li><%= link_to t(".introduce"), introduce_path, class: "introduce" %></li>
+          <% if user_signed_in? %>
+            <%= link_to t(".log_out"), destroy_user_session_path(current_user),
+              method: :delete, class: "btn btn-danger navbar-btn" %>
+            <% else %>
+              <%= link_to t(".log_in"), new_user_session_path,
+                class: "btn btn-success navbar-btn navbar-right" %>
+          <% end %>
         </ul>
       </div>
     </div>

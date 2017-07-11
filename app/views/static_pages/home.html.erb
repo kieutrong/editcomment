@@ -1,6 +1,8 @@
 <div class="jumbotron">
   <h1 class ="wellcome_to_my_app"><%= t ".wellcome_to_my_app" %></h1>
   <p class ="this_website"><%= t ".this_website" %></p>
-  <%= link_to t(".sign_up"), signup_path, class: "btn btn-lg btn-success" %>
-  <%= link_to t(".help"), help_path, class: "btn btn-lg btn-feature"%>
+  <%= link_to t(".sign_up"), new_user_registration_path,
+    class: "btn btn-lg btn-success" %>
+  <%= link_to t(".help"), help_path,
+    class: "btn btn-lg btn-feature" %>
 </div>

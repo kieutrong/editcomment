@@ -5,8 +5,6 @@ Rails.application.routes.draw do
 
   get "/introduce",to: "static_pages#introduce"
 
-  get "signup", to: "user#new"
-
   devise_for :users
   resources :users
 end

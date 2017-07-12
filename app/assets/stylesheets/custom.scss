@@ -1,8 +1,7 @@
 @import 'bootstrap';
 @import 'bootstrap-sprockets';
 
-$color-c40f0f: #c40f0f;
-$color-c40f0f: #c40f0f;
+$color-bbb: #bbb;
 $color-c40f0f: #c40f0f;
 $color-ccc: #ccc;
 $color-f1f1f1: #f1f1f1;
@@ -150,4 +149,109 @@ footer .footer-1 {
   color: $color-fff;
   margin: 100px 0 50px;
   text-align: center;
+}
+
+// CSS FOR USER
+
+.gravatar-for-user {
+  color: $color-fff;
+  margin: 100px 0;
+}
+
+// sidebar
+
+aside {
+  section {
+    margin-top: 20px;
+    padding: 10px 0;
+
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+
+    span {
+      display: block;
+      line-height: 1;
+      margin-bottom: 3px;
+    }
+
+    h1 {
+      font-size: 1.4em;
+      letter-spacing: -1px;
+      margin-bottom: 3px;
+      text-align: left;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.content-all {
+  margin: 100px 0;
+}
+
+// forms
+
+input,
+textarea,
+select,
+.uneditable-input {
+  border: 1px solid $color-bbb;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.signup-all {
+  margin: 100px 0 50px 400px;
+  width: 600px;
+
+  h1 {
+    color: $color-fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+// login
+
+.login-all {
+  margin: 100px 400px;
+  width: 600px;
+
+  h1 {
+    color: $color-fff;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .remember-me {
+    color: $color-fff;
+    margin: 0 230px;
+    margin-bottom: -30px;
+  }
+
+  a {
+    color: $color-fff;
+    font-weight: bold;
+  }
+
+  .your-email {
+    border-radius: 5px;
+    padding: 5px 0;
+  }
+
+  .your-password {
+    border-radius: 5px;
+    padding: 5px 0;
+  }
+}
+
+// Flash
+
+.alert-danger {
+  margin: 70px 0;
 }

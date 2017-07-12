@@ -45,14 +45,14 @@ ActiveRecord::Schema.define(version: 20170707081632) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name", default: "", null: false
-    t.string "avatar", default: "", null: false
-    t.string "phone", default: "", null: false
-    t.integer "gender", default: 0, null: false
-    t.integer "adress", null: false
-    t.boolean "is_admin", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "avatar", default: ""
+    t.string "phone", default: ""
+    t.integer "gender", default: 0
+    t.string "adress", default: ""
+    t.boolean "is_admin", default: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"

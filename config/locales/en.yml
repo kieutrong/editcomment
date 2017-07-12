@@ -1,4 +1,21 @@
 en:
+  devise:
+    registrations:
+      new:
+        comfirm_password: "Comfirm password"
+        create_my_account: "Create my account"
+        sign_up: "Sign up"
+        your_email: "Your email"
+        your_name: "Your name"
+        your_password: "Your password"
+
+    sessions:
+      new:
+        log_in: "Log in"
+        remember_me: "Remember me"
+        your_email: "Your email"
+        your_password: "Your password"
+
   layouts:
     application:
       project: "Project II"
@@ -17,6 +34,7 @@ en:
     header:
       introduce: "Introduce"
       log_in: "Log in"
+      log_out: "Log out"
       project: "Project II"
 
   posts:
@@ -48,3 +66,7 @@ en:
         (DRY), and the active record pattern."
 
       references: "References - wikipedia.org"
+
+  users:
+    show:
+      not_find_user: "Couldn't find User with 'id' = "

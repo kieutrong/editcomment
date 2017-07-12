@@ -1,13 +1,13 @@
 en:
   devise:
     registrations:
-      new:
-        comfirm_password: "Comfirm password"
-        create_my_account: "Create my account"
-        sign_up: "Sign up"
-        your_email: "Your email"
-        your_name: "Your name"
-        your_password: "Your password"
+      edit:
+        current_password: "Current password..."
+        edit_user: "Edit User"
+        password: "Password..."
+        password_confirmation: "Password confirmation..."
+        update: "Update"
+        your_email: "Your email..."
 
     sessions:
       new:
@@ -32,15 +32,29 @@ en:
       youtube: "youtube"
 
     header:
+      account: "Account"
       introduce: "Introduce"
       log_in: "Log in"
       log_out: "Log out"
+      profile: "Profile"
       project: "Project II"
+      setting: "Setting"
 
   posts:
     should_be_less_than_5MB: "Should be less than 5MB"
 
+  shared:
+    error_messages:
+      error: "error"
+
   static_pages:
+    form_sign_up:
+      comfirm_password: "Comfirm password"
+      create_my_account: "Create my account"
+      sign_up: "Sign up"
+      your_email: "Your email"
+      your_name: "Your name"
+      your_password: "Your password"
     help:
       get_help_on_the: "Get help on the Ruby on Rails Tutorial at the"
       help: "Help"
@@ -68,5 +82,19 @@ en:
       references: "References - wikipedia.org"
 
   users:
+    destroy:
+      user_deleted: "User deleted !"
+      you_can_not_delete: "You can not delete"
+
+    index:
+      all_users: "All Users"
+      confirm: "You sure ?"
+      delete: "Delete"
+
+    registrations:
+      update:
+        profile_updated: "Profile updated !"
+        not_updated: "Not updated !"
+
     show:
       not_find_user: "Couldn't find User with 'id' = "

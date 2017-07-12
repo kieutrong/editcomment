@@ -1,17 +1,20 @@
-@import 'bootstrap';
 @import 'bootstrap-sprockets';
+@import 'bootstrap';
 
+$color-00ff19: #00ff19;
+$color-2eff00: #2eff00;
 $color-bbb: #bbb;
 $color-c40f0f: #c40f0f;
 $color-ccc: #ccc;
 $color-f1f1f1: #f1f1f1;
-$color-fff: #fff;
+$color-ff00: #ff00;
+$white: #fff;
 $gray-111: #111;
 $gray-555: #555;
 $gray-999: #999;
 
 body {
-  background: url('../assets/img.jpg') center no-repeat;
+  background: url('img.jpg') center repeat;
 }
 
 //CSS FOR NAVBAR
@@ -32,7 +35,7 @@ body {
   }
 
   .project2 {
-    color: $color-fff;
+    color: $white;
     font-family: "Times New Roman", Times, serif;
     font-size: 30px;
     font-weight: bold;
@@ -41,20 +44,20 @@ body {
 }
 
 .jumbotron {
-  background: url('../assets/img.jpg') center no-repeat;
+  background: url('img.jpg') center repeat;
   margin-bottom: -10px;
   padding: 150px 0;
   text-align: center;
 
   h1,
   p {
-    color: $color-fff;
+    color: $white;
   }
 
   .btn-feature {
     background: $color-ccc;
-    border: 1px solid $color-fff;
-    color: $color-fff;
+    border: 1px solid $white;
+    color: $white;
 
     &:hover {
       color: $color-f1f1f1;
@@ -112,7 +115,7 @@ footer .footer-1 {
   }
 
   span {
-    color: $color-fff;
+    color: $white;
     font-size: 14px;
   }
 }
@@ -120,33 +123,33 @@ footer .footer-1 {
 // CSS for Static Page
 
 .help {
-  color: $color-fff;
+  color: $white;
   margin: 150px 0 100px;
   text-align: center;
 }
 
 .get-help-on-the-ruby {
-  color: $color-fff;
+  color: $white;
   margin: 0 0 100px;
   text-align: center;
 }
 
 .ruby-on-rails,
 .simply-rails {
-  color: $color-fff;
+  color: $white;
   margin: 100px 0 50px;
   text-align: center;
 }
 
 .references {
-  color: $color-fff;
+  color: $white;
   float: right;
   font-size: 13px;
   margin: 0 0 30px;
 }
 
 .sign-up {
-  color: $color-fff;
+  color: $white;
   margin: 100px 0 50px;
   text-align: center;
 }
@@ -154,7 +157,7 @@ footer .footer-1 {
 // CSS FOR USER
 
 .gravatar-for-user {
-  color: $color-fff;
+  color: $white;
   margin: 100px 0;
 }
 
@@ -210,7 +213,7 @@ select,
   width: 600px;
 
   h1 {
-    color: $color-fff;
+    color: $white;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -223,19 +226,19 @@ select,
   width: 600px;
 
   h1 {
-    color: $color-fff;
+    color: $white;
     font-weight: bold;
     text-align: center;
   }
 
   .remember-me {
-    color: $color-fff;
+    color: $white;
     margin: 0 230px;
     margin-bottom: -30px;
   }
 
   a {
-    color: $color-fff;
+    color: $white;
     font-weight: bold;
   }
 
@@ -252,6 +255,73 @@ select,
 
 // Flash
 
-.alert-danger {
-  margin: 70px 0;
+.alert-success {
+  margin-top: 70px;
+}
+
+.alert-alert {
+  color: $color-2eff00;
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+.edit-user-all {
+  margin: 100px 0;
+
+  h1 {
+    color: $white;
+    margin-left: 570px;
+  }
+
+  .field,
+  .actions {
+    border-radius: 5px;
+    margin-left: 400px;
+    padding: 5px 0;
+    width: 500px;
+  }
+}
+
+// All Show User
+
+.all-show-user {
+  margin: 70px 0 10px;
+
+  h1 {
+    color: $white;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
+  }
+
+  .user-name {
+    color: $white;
+    font-weight: bold;
+  }
+
+  .delete-user {
+    color: $color-c40f0f;
+    font-weight: bold;
+  }
+}
+
+.alert-notice {
+  color: $color-00ff19;
+  margin-top: 70px;
+}
+
+.error-explanation {
+  margin-left: 400px;
+  width: 500px;
+
+  ul li {
+    color: $color-ff00;
+    list-style: none;
+  }
 }

@@ -2,7 +2,25 @@
   <h1 class ="wellcome_to_my_app"><%= t ".wellcome_to_my_app" %></h1>
   <p class ="this_website"><%= t ".this_website" %></p>
   <%= link_to t(".sign_up"), new_user_registration_path,
-    class: "btn btn-lg btn-success" %>
-  <%= link_to t(".help"), help_path,
-    class: "btn btn-lg btn-feature" %>
+    class: "btn btn-lg btn-success", remote: :true,
+      data: {toggle: "modal", target: "#Modal"} %>
+
+  <div id="Modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><%= t ".sign_up" %></h4>
+        </div>
+        <div class="modal-body">
+          <%= render "form_sign_up" %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= link_to t(".help"), help_path, class: "btn btn-lg btn-feature" %>
 </div>

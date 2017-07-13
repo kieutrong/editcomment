@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
   get "/introduce",to: "static_pages#introduce"
 
-  devise_for :users
-  resources :users
+  devise_for :users, controllers: {registrations: "users/registrations"}
+  resources :users, only: [:index, :show]
 end

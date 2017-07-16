@@ -1,0 +1,11 @@
+<%= form_for([post, post.comments.build]) do |f| %>
+<%= render "shared/error_messages", object: f.object %>
+<p>
+  <%= f.text_field :content , placeholder: "Write comments... ", class: "text_comment", id: "new-content-comment" %>
+  <%= f.hidden_field :user_id, value: current_user.id %>
+</p>
+<p>
+  <%= f.submit "Create comment", class: "btn btn-primary btn_comment",
+        id: "comment_submit " %>
+</p>
+<% end %>

@@ -1,0 +1,17 @@
+<div class="user_comment">
+<%= link_to gravatar_for(comment.user),
+  comment.user %>
+  <%= link_to comment.user.name, comment.user, class: "user_commented" %>
+  <span class="content_commented"><%= comment.content %></span>
+  <span class="time_of_comment"> | <%= time_ago_in_words comment.created_at %> | </span>
+
+  <% if user_signed_in? %>
+    <% if current_user.is_user? comment.user  %>
+      <%= link_to t(".edit"), edit_post_comment_path(comment.post, comment),
+        id: "edit_comment" %>
+
+      <%= link_to "Delete", [comment.post, comment],
+      method: :delete, :remote => true, class: "delete_comment",data: {confirm: "You sure?"} %>
+    <% end %>
+  <% end %>
+</div>

@@ -15,11 +15,10 @@ class PostsController < ApplicationController
 
   def destroy
     if @post.destroy
-      flash[:success] = t ".post_deleted"
+      render json: {status: :success}
     else
-      flash[:danger] = t ".error"
+      render json: {status: :error, message: "Delete fails"}
     end
-    redirect_to request.referrer || root_url
   end
 
   private

@@ -258,6 +258,7 @@ select,
 
 .alert-success {
   margin-top: 70px;
+  margin-bottom: -5px
 }
 
 .alert-alert {
@@ -348,6 +349,9 @@ select,
     padding: 10px 0;
   }
 
+  .delete-micropost{
+    color: $color-f00;
+  }
   .user {
     margin-top: 5em;
     padding-top: 0;
@@ -403,6 +407,7 @@ select,
 
 .user-info-post {
   background: $color-f1f1f1;
+  // margin-top: -20px;
   padding-left: 50px;
 }
 
@@ -421,4 +426,74 @@ select,
 
 .feed-all {
   margin: 50px 0;
+}
+
+.all-comment {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  .user_comment {
+    .gravatar {
+      width: 60px;
+    }
+
+    .user_commented {
+      color: $color-c40f0f;
+    }
+
+    .delete_comment{
+      color: $color-f00;
+    }
+  }
+
+  .content_commented {
+    display: block;
+    margin-left: 60px;
+
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+  .time_of_comment {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+.new_comment {
+  width: 300px;
+  margin-bottom: -20px;
+  .text_comment {
+    padding: 5px 0;
+    border-radius: 5px;
+  }
 }
